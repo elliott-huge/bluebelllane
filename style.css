@@ -1,0 +1,21 @@
+body{
+    background-color: #CBD1CB;
+    font-size: 14px;
+}
+
+p{
+    color: #4e4e4e;
+}
+
+h1{
+    color: #4e4e4e;
+    
+}
+
+section{
+    text-align: center;
+}
+
+#navLogo{
+    max-width: 340px;
+}
