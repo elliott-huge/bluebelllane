@@ -1,6 +1,7 @@
 body{
     background-color: #CBD1CB;
     font-size: 14px;
+    margin: 0;
 }
 
 p{
@@ -20,14 +21,136 @@ section{
     text-align: center;
 }
 
+#stuckHeader{
+    background-color: #CBD1CB;
+    height: 76px;
+    position: sticky;
+    top: 0;
+}
+
+#navBar{
+    height: 76px;
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+#burgerButton{
+    display: none;
+}
+
 #navLogo{
-    max-width: 340px;
+    width: 340px;
+    max-width: 90vw;
+}
+
+nav {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
 }
 
 nav a{
     color: #4e4e4e;
     font-size: 32px;
     font-family: "kepler-std";
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
     text-decoration-thickness: 1.5px;
     text-underline-offset: 4px;
+}
+
+.imageRoll{
+    text-align: center;
+    width: 1100px;
+    max-width: 92vw;
+    margin: 0 auto;
+}
+
+.imageRoll img{
+    width: 500px;
+    max-width: 90vw;
+    margin: 10px 5px;
+}
+
+.textBlock{
+    max-width: 450px;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.divider{
+    width: 160px;
+    max-width: 95vw;
+}
+
+footer{
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #2C2C2C;
+    font-family: "kepler-std";
+    font-size: 20px;
+    text-decoration: none;
+    color: #CBD1CB;
+    text-align: center;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer img{
+    width: 28px;
+    margin: 0 10px 10px 10px;
+}
+
+footer a{
+    color: #CBD1CB;
+}
+
+@media only screen and (max-width: 730px) {
+    nav{
+        display: none;
+        background-color: aliceblue;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        left: 0;
+        top: 76px;
+        width: 100%;
+
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    nav a{
+        width: auto;
+        margin: 0;
+    }
+
+
+    #navBar{
+        text-align: center;
+    }
+
+
+    #burgerButton{
+        width: 24px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        
+        left: 10px;
+    }
 }
