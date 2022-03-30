@@ -94,7 +94,7 @@ nav a:hover{
 }
 
 .divider{
-    width: 160px;
+    width: 220px;
     max-width: 95vw;
 }
 
@@ -153,7 +153,7 @@ footer a{
 
 
     #burgerButton{
-        width: 24px;
+        width: 26px;
         display: inline-block;
         position: absolute;
         top: 50%;
