@@ -33,6 +33,7 @@ section{
     width: 100%;
     max-width: 1050px;
     margin: auto;
+    z-index: -2;
 }
 
 #burgerButton{
@@ -42,9 +43,12 @@ section{
 #navLogo{
     width: 340px;
     max-width: 90vw;
+    z-index: 2;
+    position: relative;
 }
 
 nav {
+    z-index: 1;
     display: inline-flex;
     justify-content: space-evenly;
     width: 50vw;
