@@ -9,6 +9,7 @@ body{
     min-height: 100vh;
     position: relative;
     padding-bottom: 210px;
+    padding-top: 76px;
 }
 
 p{
@@ -30,9 +31,10 @@ section{
 
 #stuckHeader{
     background-color: #CBD1CB;
-    height: 76px;
-    position: sticky;
+    display: inline;
+    position: fixed;
     top: 0;
+    width: 100%;
 }
 
 #navBar{
