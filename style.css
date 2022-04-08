@@ -1,3 +1,7 @@
+html, body{
+    overflow-x: hidden;
+}
+
 body{
     background-color: #CBD1CB;
     font-size: 14px;
@@ -5,7 +9,6 @@ body{
     min-height: 100vh;
     position: relative;
     padding-bottom: 210px;
-    overflow-x: hidden;
 }
 
 p{
@@ -46,7 +49,7 @@ section{
 
 #navLogo{
     width: 340px;
-    max-width: 90vw;
+    max-width: 75vw;
     z-index: 2;
     position: relative;
 }
@@ -170,5 +173,9 @@ footer a{
         transform: translateY(-50%);
         
         left: 10px;
+    }
+
+    footer{
+        padding: 0;
     }
 }
