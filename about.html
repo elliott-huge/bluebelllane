@@ -13,14 +13,18 @@
   <body>
     <div id="stuckHeader">
       <div id="navBar">
-        <a href="javascript:void(0);">
+        <a title="toggle navbar" href="javascript:void(0);">
           <img
+            alt=""
             id="burgerButton"
             src="res/burgericon.svg"
             onclick="toggleNav()">
         </a>
         <a href="/">
-          <img id="navLogo" src="res/bluebell-lane-logo-wide.avif">
+          <img
+            alt=""
+            id="navLogo"
+            src="res/bluebell-lane-logo-wide.avif">
         </a>
         <nav role="navigation" id="collapsable">
           <a href="/">Home</a>
@@ -88,25 +92,25 @@
 <script type="text/javascript">
   $(window).resize(function() {
   if(window.innerWidth >= 730)
-          {
-              if(document.getElementById("collapsable").style.display === 'none')
-              {
-                  document.getElementById("collapsable").style.display = 'inline-flex';
-              }
-          }
-          if(window.innerWidth < 730)
-          {
-              document.getElementById("collapsable").style.display = 'none'
-          }
-      });
-      function toggleNav() {
-          var state = document.getElementById("collapsable").style.display;
-  
-          if (state === 'inline-flex')
-          {
-              document.getElementById("collapsable").style.display = 'none';
-          }
-          else{
-              document.getElementById("collapsable").style.display = 'inline-flex';
-          }
-      }</script>
+                {
+                    if(document.getElementById("collapsable").style.display === 'none')
+                    {
+                        document.getElementById("collapsable").style.display = 'inline-flex';
+                    }
+                }
+                if(window.innerWidth < 730)
+                {
+                    document.getElementById("collapsable").style.display = 'none'
+                }
+            });
+            function toggleNav() {
+                var state = document.getElementById("collapsable").style.display;
+        
+                if (state === 'inline-flex')
+                {
+                    document.getElementById("collapsable").style.display = 'none';
+                }
+                else{
+                    document.getElementById("collapsable").style.display = 'inline-flex';
+                }
+            }</script>
