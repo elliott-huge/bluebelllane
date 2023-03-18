@@ -20,7 +20,7 @@
             src="res/burgericon.svg"
             onclick="toggleNav()">
         </span>
-        <a href="/">
+        <a href="/" title="Go to homepage">
           <img
             alt=""
             id="navLogo"
@@ -101,25 +101,25 @@
 <script type="text/javascript">
   $(window).resize(function() {
   if(window.innerWidth >= 730)
-                      {
-                          if(document.getElementById("collapsable").style.display === 'none')
-                          {
-                              document.getElementById("collapsable").style.display = 'inline-flex';
-                          }
-                      }
-                      if(window.innerWidth < 730)
-                      {
-                          document.getElementById("collapsable").style.display = 'none'
-                      }
-                  });
-                  function toggleNav() {
-                      var state = document.getElementById("collapsable").style.display;
-              
-                      if (state === 'inline-flex')
-                      {
-                          document.getElementById("collapsable").style.display = 'none';
-                      }
-                      else{
-                          document.getElementById("collapsable").style.display = 'inline-flex';
-                      }
-                  }</script>
+                        {
+                            if(document.getElementById("collapsable").style.display === 'none')
+                            {
+                                document.getElementById("collapsable").style.display = 'inline-flex';
+                            }
+                        }
+                        if(window.innerWidth < 730)
+                        {
+                            document.getElementById("collapsable").style.display = 'none'
+                        }
+                    });
+                    function toggleNav() {
+                        var state = document.getElementById("collapsable").style.display;
+                
+                        if (state === 'inline-flex')
+                        {
+                            document.getElementById("collapsable").style.display = 'none';
+                        }
+                        else{
+                            document.getElementById("collapsable").style.display = 'inline-flex';
+                        }
+                    }</script>
