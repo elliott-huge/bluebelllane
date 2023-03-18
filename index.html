@@ -1,103 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="res/icon.png"/>
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="https://use.typekit.net/jts5iyn.css">
-        <meta name="description" content="Bluebell Lane is a floristry studio ran by Sarah, a weddings and event florist based in South Cambridgeshire"/>
-        <title>Bluebell Lane | Weddings Florist in South Cambs</title>
-    </head>
-    <body>
-        <div id="stuckHeader">
-            <div id="navBar">
-                <a href="javascript:void(0);">  
-                    <img id="burgerButton" src="res/burgericon.svg" onclick="toggleNav()">
-                </a>
-                <a href="/">
-                    <img id="navLogo" src="res/Bluebell Lane Logo Wide.png">
-                </a>
-                <nav role="navigation" id="collapsable">
-                    <a href="/">Home</a>
-                    <a href="gallery">Gallery</a>
-                    <a href="about">About</a>
-                    <a href="contact">Contact</a>
-                </nav>
-            </div>
-        </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="res/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/jts5iyn.css">
+    <meta name="description" content="Bluebell Lane is a floristry studio ran by Sarah, a weddings and event florist based in South Cambridgeshire" />
+    <title>Bluebell Lane | Weddings Florist in South Cambs</title>
+  </head>
+  <body>
+    <div id="stuckHeader">
+      <div id="navBar">
+        <a href="javascript:void(0);">
+          <img
+            id="burgerButton"
+            src="res/burgericon.svg"
+            onclick="toggleNav()">
+        </a>
+        <a href="/">
+          <img id="navLogo" src="res/bluebell-lane-logo-wide.avif">
+        </a>
+        <nav role="navigation" id="collapsable">
+          <a href="/">Home</a>
+          <a href="gallery">Gallery</a>
+          <a href="about">About</a>
+          <a href="contact">Contact</a>
+        </nav>
+      </div>
+    </div>
 
-        <section class="textBlock">
-            <h1>Home</h1>
-            <img src="res/divider.svg" alt="dividing line" class="divider">
-            <p>Beautiful, seasonal floristry for weddings, events and special occasions in Cambridgeshire and surrounding areas.</p>
-        </section>
-        
-        <section class=imageRoll>
-            <img src="res/imgs/home/1.jpg" alt="">
-            <br>
-            <img src="res/imgs/home/2.jpg" alt="">
-            
-            <img src="res/imgs/home/3.jpg" alt="">
-            
-            <img src="res/imgs/home/4.jpg" alt="">
+    <section class="textBlock">
+      <h1>Home</h1>
+      <img
+        src="res/divider.svg"
+        alt="dividing line"
+        class="divider">
+      <p>Beautiful, seasonal floristry for weddings, events and special occasions in Cambridgeshire and surrounding areas.</p>
+    </section>
 
-            <img src="res/imgs/home/5.jpg" alt="">
+    <section class=imageRoll>
+      <img src="res/imgs/home/1.jpg" alt="">
+      <br>
+      <img src="res/imgs/home/2.jpg" alt="">
 
-            <img src="res/imgs/home/6.jpg" alt="">
-        </section>
+      <img src="res/imgs/home/3.jpg" alt="">
 
-        <footer>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/Bluebell-Lane-Flowers-106692294606262/" style="text-decoration: none;">
-                        <img src="res/social media icons/fb-white.png" alt="Facebook logo">
-                    </a>
-                    <a href="https://www.instagram.com/bluebell_lane_flowers/" style="text-decoration: none;">
-                        <img src="res/social media icons/ig-white.png" alt="Instagram logo">
-                    </a>
-                </li>
-                <li>
-                    Contact Sarah at: <a href="mailto:sarah@bluebelllane.co.uk">sarah@bluebelllane.co.uk</a>
-                    <br>
-                    or call via <a href="tel:07967350774">07967 350 774</a>
-                </li>
-                <li>
-                    <br>
-                    <i>Site designed and developed by:</i>
-                    <a href="https://www.elliotthuge.dev/">
-                         Elliott H.
-                    </a>
-                </li>
-            </ul>
-        </footer>
-    </body>
+      <img src="res/imgs/home/4.jpg" alt="">
+
+      <img src="res/imgs/home/5.jpg" alt="">
+
+      <img src="res/imgs/home/6.jpg" alt="">
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/Bluebell-Lane-Flowers-106692294606262/" style="text-decoration: none;">
+            <img src="res/social media icons/fb-white.png" alt="Facebook logo">
+          </a>
+          <a href="https://www.instagram.com/bluebell_lane_flowers/" style="text-decoration: none;">
+            <img src="res/social media icons/ig-white.png" alt="Instagram logo">
+          </a>
+        </li>
+        <li>
+          Contact Sarah at:
+          <a href="mailto:sarah@bluebelllane.co.uk">sarah@bluebelllane.co.uk</a>
+          <br>
+          or call via
+          <a href="tel:07967350774">07967 350 774</a>
+        </li>
+        <li>
+          <br>
+          <i>Site designed and developed by:</i>
+          <a href="https://www.elliotthuge.dev/">
+            Elliott H.
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
 
 <script type="text/javascript">
-    $(window).resize(function() {
-        if(window.innerWidth >= 730)
-        {
-            if(document.getElementById("collapsable").style.display === 'none')
-            {
-                document.getElementById("collapsable").style.display = 'inline-flex';
-            }
-        }
-        if(window.innerWidth < 730)
-        {
-            document.getElementById("collapsable").style.display = 'none'
-        }
-    });
-    function toggleNav() {
-        var state = document.getElementById("collapsable").style.display;
-
-        if (state === 'inline-flex')
-        {
-            document.getElementById("collapsable").style.display = 'none';
-        }
-        else{
-            document.getElementById("collapsable").style.display = 'inline-flex';
-        }
-    }
-</script>
+  $(window).resize(function() {
+  if(window.innerWidth >= 730)
+          {
+              if(document.getElementById("collapsable").style.display === 'none')
+              {
+                  document.getElementById("collapsable").style.display = 'inline-flex';
+              }
+          }
+          if(window.innerWidth < 730)
+          {
+              document.getElementById("collapsable").style.display = 'none'
+          }
+      });
+      function toggleNav() {
+          var state = document.getElementById("collapsable").style.display;
+  
+          if (state === 'inline-flex')
+          {
+              document.getElementById("collapsable").style.display = 'none';
+          }
+          else{
+              document.getElementById("collapsable").style.display = 'inline-flex';
+          }
+      }</script>
